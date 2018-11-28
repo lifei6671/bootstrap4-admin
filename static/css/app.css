@@ -18,6 +18,39 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.bg-blue{
+    background: #2d6dcc !important;
+}
+.fas{
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+}
+/**
+ * profile
+ */
+.navbar .navbar-nav .nav-link{
+    color: #ffffff;
+}
+.navbar .navbar-nav .nav-item.dropdown>.nav-link{
+    line-height: 32px;
+}
+.navbar .navbar-nav .nav-item.dropdown>.dropdown-toggle{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.navbar .navbar-nav .nav-item.dropdown>.nav-link:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.profile{
+    color: #ffffff;
+    float: right;
+    text-align: right;
+}
+.navbar .dropdown-menu{
+    font-size: 14px;
+    line-height: 1.75rem;
+}
 /*
  * Sidebar
  */
