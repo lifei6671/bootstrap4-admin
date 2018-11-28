@@ -2,9 +2,276 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Minho">
+    <link rel="icon" href="/favicon.ico">
+    <title>Bootstrap4 Admin</title>
+    <link href="static/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/fontawesome/5.5.0/css/all.min.css" rel="stylesheet">
+    <link href="static/jquery/plugin/metismenu/3.0.3/metisMenu.min.css" rel="stylesheet" >
+    <link href="static/css/app.css" rel="stylesheet">
+    <script type="text/javascript" src="static/jquery/2.4.4/jquery.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-dark sticky-top bg-blue flex-md-nowrap p-0 navbar-expand-sm">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Bootstrap4 Admin</a>
+    <div class="collapse navbar-collapse p-0 m-0">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-header" href="#" data-toggle="dropdown">
+                    <i class="fas fa-landmark"></i> 模块 <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fas fa-newspaper"></i> 资讯</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-map-marked"></i> 地图</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-file-image"></i> 图片</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-user"></i> 用户</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav profile">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://avatars3.githubusercontent.com/u/3959008?v=3&s=40" class="rounded-circle" width="32px">
+                    <span class="name">Admin</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">个人中心</a>
+                    <a class="dropdown-item" href="#">修改密码</a>
+                    <a class="dropdown-item" href="#">系统配置</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">退出登录</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul id="sidebar" class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link menu-header d-block" href="index.html">
+                            <i class="fas fa-home"></i> 控制台
+                        </a>
+                    </li>
+                    <li class="nav-item mm-active">
+                        <a class="nav-link has-arrow menu-header d-block" href="#" aria-expanded="false">
+                            <i class="fas fa-cubes"></i> 组件
+                        </a>
+                        <ul class="nav mm-show">
+                            <li class="nav-item">
+                                <a href="buttons.html" class="nav-link active">按钮</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="buttons.html" class="nav-link">按钮</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">排版</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="labels.html" class="nav-link">标签</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">提示</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">导航</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">弹窗</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">工具</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link has-arrow menu-header d-block">
+                            <i class="fas fa-file-archive"></i> 页面
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">登录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="register.html" class="nav-link">注册</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="404.html" class="nav-link">404</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-arrow menu-header d-block">
+                            <i class="fas fa-sitemap"></i> 多级菜单
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link has-arrow menu-header d-block">二级菜单</a>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link menu-header d-block">三级级菜单</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forms.html" class="menu-header d-block">
+                            <i class="fas fa-solar-panel"></i> 表单
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forms.html" class="menu-header d-block">
+                            <i class="fas fa-table"></i> 表格
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-header d-block" href="webfont.html">
+                            <i class="fab fa-font-awesome"></i> 图标
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <h1 class="h2">按钮</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-sm btn-outline-secondary">Share</button>
+                        <button class="btn btn-sm btn-outline-secondary">Export</button>
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                        <span data-feather="calendar"></span>
+                        This week
+                    </button>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-header">基础样式</div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header">线条按钮</div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header">按钮大小</div>
+                <div class="card-body">
+                    <p>
+
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-header">按钮状态</div>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+                    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+                    <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        Single toggle
+                    </button>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-header">CheckBox 和 Radio</div>
+                <div class="card-body">
+                    <div class="btn-group-toggle mb-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="checkbox" checked autocomplete="off"> Checked
+                        </label>
+                    </div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script type="text/javascript" src="static/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/jquery/plugin/metismenu/3.0.3/metisMenu.js"></script>
+<script type="text/javascript" src="static/Chartjs/2.7.3/Chart.bundle.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#sidebar").metisMenu();
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                datasets: [{
+                    data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                    lineTension: 0,
+                    backgroundColor: 'transparent',
+                    borderColor: '#007bff',
+                    borderWidth: 4,
+                    pointBackgroundColor: '#007bff'
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: false
+                        }
+                    }]
+                },
+                legend: {
+                    display: false,
+                }
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
