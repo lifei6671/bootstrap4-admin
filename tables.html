@@ -57,13 +57,13 @@
                             <i class="fas fa-home"></i> 控制台
                         </a>
                     </li>
-                    <li class="nav-item mm-active">
+                    <li class="nav-item">
                         <a class="nav-link has-arrow menu-header d-block" href="#" aria-expanded="false">
                             <i class="fas fa-cubes"></i> 组件
                         </a>
-                        <ul class="nav mm-show">
+                        <ul class="nav">
                             <li class="nav-item">
-                                <a href="buttons.html" class="nav-link active">按钮</a>
+                                <a href="buttons.html" class="nav-link">按钮</a>
                             </li>
                             <li class="nav-item">
                                 <a href="buttons.html" class="nav-link">按钮</a>
@@ -125,7 +125,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="tables.html" class="menu-header d-block">
+                        <a href="tables.html" class="menu-header d-block active">
                             <i class="fas fa-table"></i> 表格
                         </a>
                     </li>
@@ -141,7 +141,7 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                <h1 class="h2">按钮</h1>
+                <h1 class="h2">表格</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                     <div class="btn-group mr-2">
                         <button class="btn btn-sm btn-outline-secondary">Share</button>
@@ -157,87 +157,62 @@
             <div class="card mb-2">
                 <div class="card-header">基础样式</div>
                 <div class="card-body">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-light">Light</button>
-                    <button type="button" class="btn btn-dark">Dark</button>
-                    <button type="button" class="btn btn-link">Link</button>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="card mb-2">
                 <div class="card-header">线条按钮</div>
                 <div class="card-body">
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                    <button type="button" class="btn btn-outline-success">Success</button>
-                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                    <button type="button" class="btn btn-outline-info">Info</button>
-                    <button type="button" class="btn btn-outline-light">Light</button>
-                    <button type="button" class="btn btn-outline-dark">Dark</button>
+
                 </div>
             </div>
             <div class="card mb-2">
                 <div class="card-header">按钮大小</div>
                 <div class="card-body">
-                    <p>
 
-                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-                    </p>
-                    <p>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                        <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-                    </p>
                 </div>
             </div>
 
             <div class="card mb-2">
                 <div class="card-header">按钮状态</div>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
-                    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
-                    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
-                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
-                    <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
-                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                        Single toggle
-                    </button>
+
                 </div>
             </div>
 
             <div class="card mb-2">
                 <div class="card-header">按钮组</div>
                 <div class="card-body">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                    </div>
 
-                    <div class="btn-toolbar mt-2" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" aria-label="First group">
-                            <button type="button" class="btn btn-secondary">1</button>
-                            <button type="button" class="btn btn-secondary">2</button>
-                            <button type="button" class="btn btn-secondary">3</button>
-                            <button type="button" class="btn btn-secondary">4</button>
-                        </div>
-                        <div class="btn-group mr-2" role="group" aria-label="Second group">
-                            <button type="button" class="btn btn-secondary">5</button>
-                            <button type="button" class="btn btn-secondary">6</button>
-                            <button type="button" class="btn btn-secondary">7</button>
-                        </div>
-                        <div class="btn-group" role="group" aria-label="Third group">
-                            <button type="button" class="btn btn-secondary">8</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
